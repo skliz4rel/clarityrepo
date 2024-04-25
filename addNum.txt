@@ -1,0 +1,9 @@
+;;This contract would add two numbers together
+
+(+  4 6) ;;Result is 3
+
+;; The following line is not evaluated
+
+;; (+ 4 5)
+
+( - (* 5 4) 5)

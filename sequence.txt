@@ -1,0 +1,25 @@
+;;Buffers  Buffers are unstructured data of a fixed maximum length. They always start with the prefix 0x followed by a hexadecimal 
+;; string.
+
+0x68656c6c6f21
+
+;;Strings  A string is a sequence of characters. These can be defined as ASCII strings or UTF-8 strings. ASCII strings may only contain basic Latin characters whilst UTF-8 strings can contain fun stuff like emoji. Both strings are enclosed in double-quotes (") but UTF-8 strings are also prefixed by a u.
+
+ASCII
+"This is an ASCII string"
+
+
+UTF
+u"And this is an UTF-8 string \u{1f601}"
+
+Lists
+
+Lists are sequences of fixed length that contain another type.
+
+(list 4 8 15 16 23 42)
+
+(list "Hello" "World" "!")
+
+
+(list u5 10 "hello") ;; This list is invalid.
+

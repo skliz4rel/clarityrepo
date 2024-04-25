@@ -1,0 +1,81 @@
+;;unsigned integers
+
+(+ u2 u3)
+
+;; result is u5   meaning unsigned 5 integer
+
+;;Subtraction
+
+(+ u2 u3) 
+;; answer is u5 unisigned meaning it cannot be negative.
+
+;;Substraction
+(- 5 10)
+;; Answer is -5    This is sample of signed integreers
+
+;; Built-in Functions in Clarity
+(* u2 u16)
+;; Answer is u32
+
+;; Division
+(/ 100 4)
+;; Answer is 25
+
+(/ u100 u3)
+;; Answer is u33
+
+;; Note that there are no decimals only integers are allowed.
+
+Booleans
+//bool, short for boolean. A boolean value is either true or false. They are used to check if a certain condition is met or unmet (true //or false). Some built-in functions that accept booleans:
+//not (inverts a boolean):
+
+(not true)
+;; result is false
+
+//and (returns true if all inputs are true):
+(and true true true)
+
+;; result is true.
+
+//or (returns true if at least one input is true):
+(or false true false)
+
+
+Principals
+A principal is a special type in Clarity and represents a Stacks address on the blockchain. 
+
+ It is a unique identifier you can roughly equate to an email address or bank account number—although definitely not the same! You might have also heard the term wallet address as well. Clarity admits two different kinds of principals: standard principals and contract principals
+
+Standard Principals are backed by corresponding private keys.
+
+Contract Principals point to a Smart Contract.
+
+ Principals follow a specific structure and always start with the characters SP for the Stacks mainnet and ST for the testnet and mocknet1.
+
+
+A literal principal value is prefixed by a single quote (') in Clarity. Notice there is no closing single quote.
+
+'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE
+
+Contract principals are a compound of the standard principal that deployed the contract and the contract name, delimited by a dot:
+
+'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.my-awesome-contract
+
+To retrieve the current STX balance of a principal, we can pass it to the stx-get-balance function.
+
+(stx-get-balance 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE)
+
+;; Answer u0
+
+Both kinds of principals can hold tokens, we can thus also check the balance of a contract.
+
+(stx-get-balance 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.my_contract)
+;; Answer u0
+
+Zero balances are a little boring, so let us send some some STX to a principal:
+
+(stx-transfer? u500 tx-sender 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE)
+
+0.0005 STXST000000000000000000002AMW42HST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE
+
