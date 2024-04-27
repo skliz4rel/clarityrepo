@@ -35,8 +35,28 @@ path = 'contracts/maps.clar'
 clarity_version = 2
 epoch = 2.4
 
+[contracts.privatefunction]
+path = 'contracts/privatefunction.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.privatefunction1]
+path = 'contracts/privatefunction1.clar'
+clarity_version = 2
+epoch = 2.4
+
 [contracts.publicfunction]
 path = 'contracts/publicfunction.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.publicfunction1]
+path = 'contracts/publicfunction1.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.publicfunction2]
+path = 'contracts/publicfunction2.clar'
 clarity_version = 2
 epoch = 2.4
 

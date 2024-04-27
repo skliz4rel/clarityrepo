@@ -29,7 +29,7 @@
 ;;
 
 
-;;Data maps are so-called hash tables. It is a kind of data structure that allows you to map keys to specific values. Unlike tuple keys, data map keys are not hard-coded names. They are represented as a specific concrete values. You should use maps if you want to relate data to other data.
+;;Data maps are so-called hash tables or HASH MAPS (key -> value store). It is a kind of data structure that allows you to map keys to specific values. Unlike tuple keys, data map keys are not hard-coded names. They are represented as a specific concrete values. You should use maps if you want to relate data to other data.
 
 ;;(define-map map-name key-type value-type)
 
