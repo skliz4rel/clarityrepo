@@ -5,6 +5,16 @@ authors = []
 telemetry = true
 cache_dir = '.\.cache'
 requirements = []
+[contracts.asserts]
+path = 'contracts/asserts.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.asserts1]
+path = 'contracts/asserts1.clar'
+clarity_version = 2
+epoch = 2.4
+
 [contracts.basics]
 path = 'contracts/basics.clar'
 clarity_version = 2
@@ -20,13 +30,28 @@ path = 'contracts/constant.clar'
 clarity_version = 2
 epoch = 2.4
 
+[contracts.controlflow]
+path = 'contracts/controlflow.clar'
+clarity_version = 2
+epoch = 2.4
+
 [contracts.counter]
 path = 'contracts/counter.clar'
 clarity_version = 2
 epoch = 2.4
 
+[contracts.ifstatement]
+path = 'contracts/ifstatement.clar'
+clarity_version = 2
+epoch = 2.4
+
 [contracts.keywords]
 path = 'contracts/keywords.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.listtokens]
+path = 'contracts/listtokens.clar'
 clarity_version = 2
 epoch = 2.4
 
@@ -45,6 +70,11 @@ path = 'contracts/privatefunction1.clar'
 clarity_version = 2
 epoch = 2.4
 
+[contracts.privatefunction2]
+path = 'contracts/privatefunction2.clar'
+clarity_version = 2
+epoch = 2.4
+
 [contracts.publicfunction]
 path = 'contracts/publicfunction.clar'
 clarity_version = 2
@@ -60,8 +90,23 @@ path = 'contracts/publicfunction2.clar'
 clarity_version = 2
 epoch = 2.4
 
+[contracts.readonlyfunc]
+path = 'contracts/readonlyfunc.clar'
+clarity_version = 2
+epoch = 2.4
+
 [contracts.sequence]
 path = 'contracts/sequence.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.try]
+path = 'contracts/try.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.unwrap-flavor]
+path = 'contracts/unwrap-flavor.clar'
 clarity_version = 2
 epoch = 2.4
 
