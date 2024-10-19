@@ -10,7 +10,7 @@
 
 (define-map recipients principal uint)
 
-(define-private (is-invalid-caller) 
+(define-private (is-invalid-caller)
 
    (is-eq contract-owner tx-sender)
 )

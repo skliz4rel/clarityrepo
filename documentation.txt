@@ -1,0 +1,2 @@
+  https://docs.hiro.so/clarinet/feature-guides/test-contract-with-clarinet-sdk
+  https://docs.hiro.so/clarinet/guides/test-contract-with-clarinet-sdk#custom-vitest-matchers

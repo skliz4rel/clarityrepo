@@ -42,28 +42,3 @@
         (ok (map-get? listings { id: index}))
     )
 )
-
-;; Update name function that only the maker for a specific listing
-;; can call.
-(define-data-var item principal tx-sender)
-
-(define-public (update-name (id uint) (newname (string-ascii 10))) 
-    (begin 
-        
-        (let 
-            (
-                ;;The magic happens here
-                (listing (unwrap! (get-listing id) err-unknown-listing) )
-            )
-
-            (var-set item (unwrap-err-panic (map-get? listings id)) )
-            (asserts! (is-eq tx-sender item) err-not-the-maker)
-        
-            (map-set listings {id: id }  (merge listing { name: newname} )  )
-
-            (ok true)
-        )
-    )
-)
-
-

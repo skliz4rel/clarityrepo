@@ -1,6 +1,6 @@
 [project]
 name = 'counter'
-description = ''
+description = 'This is my learning for clarity smart contract programming'
 authors = []
 telemetry = true
 cache_dir = '.\.cache'
@@ -50,6 +50,16 @@ path = 'contracts/keywords.clar'
 clarity_version = 2
 epoch = 2.4
 
+[contracts.letoperator]
+path = 'contracts/letoperator.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.letoperator1]
+path = 'contracts/letoperator1.clar'
+clarity_version = 2
+epoch = 2.4
+
 [contracts.listtokens]
 path = 'contracts/listtokens.clar'
 clarity_version = 2
@@ -57,6 +67,11 @@ epoch = 2.4
 
 [contracts.maps]
 path = 'contracts/maps.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.mycounter]
+path = 'contracts/mycounter.clar'
 clarity_version = 2
 epoch = 2.4
 
@@ -92,6 +107,16 @@ epoch = 2.4
 
 [contracts.readonlyfunc]
 path = 'contracts/readonlyfunc.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.responsechecking]
+path = 'contracts/responsechecking.clar'
+clarity_version = 2
+epoch = 2.4
+
+[contracts.sample]
+path = 'contracts/sample.clar'
 clarity_version = 2
 epoch = 2.4
 

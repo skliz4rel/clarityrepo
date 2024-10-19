@@ -1,14 +1,12 @@
 
 {
-  "name": "counter-tests",
+  "name": "timelocked-wallet-tests",
   "version": "1.0.0",
   "description": "Run unit tests on this project.",
   "type": "module",
   "private": true,
   "scripts": {
     "test": "vitest run",
-    "test:coverage": "vitest run -- --coverage",
-    "test:costs": "vitest run -- --costs",
     "test:report": "vitest run -- --coverage --costs",
     "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
   },
